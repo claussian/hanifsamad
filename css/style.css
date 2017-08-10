@@ -1331,6 +1331,11 @@ a.arrow{
 .banner-matter {
 	top: 7em;
 }
+
+.grid h2 {
+	text-align: center;
+}
+
 .about h3 ,.work h3,.blog h3{
 	line-height: 2em;
 	font-size: 2em;
@@ -1430,6 +1435,11 @@ a.arrow {
 .banner {
 	min-height: 291px;
 }
+
+.grid h2 {
+	text-align: center;
+}
+
 .about h3,.work h3,.blog h3 ,.contact h3{
 		line-height: 1.8em;
 		font-size: 1.8em;
@@ -1450,6 +1460,17 @@ p.dummy-about {
 
 .name-blackout {
 	display: block;
+	text-align: center;
+}
+
+.grid-item {
+	width: 100%;
+	float: left;
+}
+
+.grid-item--width2 {
+	width: 100%;
+	float: left;
 }
 
 .about {
@@ -1598,6 +1619,10 @@ a.arrow{
 	left: 8em;
 	bottom:12px;
 }
+
+.grid h2 {
+	text-align: center;
+}
 .about h3, .work h3, .blog h3, .contact h3 {
 	font-size: 1.5em;
 	line-height: 1.5em;
@@ -1616,6 +1641,17 @@ padding: 0 0 20px 0;
 
 .name-blackout {
 	display: block;
+	text-align: center;
+}
+
+.grid-item {
+	width: 100%;
+	float: left;
+}
+
+.grid-item--width2 {
+	width: 100%;
+	float: left;
 }
 
 .about {
