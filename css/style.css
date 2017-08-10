@@ -290,6 +290,17 @@ a.down-in{
 	hyphens: auto;
 }
 
+.mobile-friendly-inline {
+	background: url('../images/phone-icon.png');
+	background-size: cover;
+	display: inline-block;
+	height:20px;
+	width:20px;
+	margin-left: 2px;
+	position: relative;
+	top: 5px;
+}
+
 /*--ClinicQueue styles--*/
 .grid-item-logo-clinicq {
 	background: url('../images/ClinicQueue_Black.png');
@@ -365,6 +376,18 @@ a.down-in{
 .swapbooks a:hover .name-swapbooks {
 	transition: background-color 0.5s ease;
 	background-color: #7C2345;
+}
+
+.swapbooks a:hover .mobile-friendly-inline {
+	transition: background 0.5s ease;
+	background: url('../images/phone-icon-swapbooks.png');
+	background-size: cover;
+	display: inline-block;
+	height:20px;
+	width:20px;
+	margin-left: 2px;
+	position: relative;
+	top: 5px;
 }
 
 /*----*/
