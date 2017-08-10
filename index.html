@@ -11,6 +11,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- CDN for Masonry -->
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="./js/masonry.pkgd.min.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
@@ -22,7 +23,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="keywords" content="" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--fonts-->
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
 <!--//fonts-->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
@@ -37,44 +38,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<!----start-top-nav-script---->
 </head>
 <body>
-<!--header-->
-	<!-- <div class="header" id="home">
-			<div class="container">
-				<div class="header-top">
-					<div class="logo">
-						<a href="index.html"><img src="images/logo.png" alt="" ></a>
-					</div>
-					<div class="top-nav">
-					<span class="menu"> </span>
-						<ul>
-							<li class="active" ><a href="index.html" class="scroll">HOME</a></li>
-							<li><a href="#about" class="scroll"> ABOUT</a></li>
-							<li><a href="#work" class="scroll">WORK </a></li>
-							<li><a href="#blog" class="scroll">BLOG </a></li>
-							<li><a href="#contact" class="scroll">CONTACT </a></li>
-						</ul>
-						<script>
-						$("span.menu").click(function(){
-							$(".top-nav ul").slideToggle(500, function(){
-							});
-						});
-				</script>
-					</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="required">
-				<input type="submit" value="REQUEST FOR QUOTE" >
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div> -->
-	<!---->
-	<!-- <div class="banner">
-			<div class="banner-matter">
-				<a href="#" class="down"><img src="images/load.png" alt="" >Download cv</a>
-			</div>
-			<a href="#about" class="scroll arrow"><img src="images/arrow.png" alt=""></a>
-	</div> -->
 	<!--content-->
 	<div class="content">
 			<div class="about" id="about">
@@ -100,6 +63,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!---->
 			<div class="container">
 			<div class="work" id="work">
+				<script>
+				$('.grid').masonry({
+					  // set itemSelector so .grid-sizer is not used in layout
+					  itemSelector: '.grid-item',
+					  // use element for option
+					  columnWidth: '.grid-sizer',
+					  percentPosition: true
+					});
+				</script>
 				<h3>WORK</h3>
 				<br/>
 				<div class="grid">
@@ -109,21 +81,41 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<a href="https://52.76.125.37" target="_blank">
 						<div class="grid-item-container">
 							<div class="row">
-								<div class="col-md-5 bootstrap-clinicq">
+								<div class="col-md-5 bootstrap-col">
 									<div class="grid-item-logo-clinicq"></div>
 								</div>
 								<div class="col-md-7">
-									<div class="grid-item-description text-clinicq">
+									<div class="grid-item-description">
 										<h2>ClinicQueueSG</h2>
 										<p>A one-stop information portal to view and post the queue situation at over 900 primary care facilities in Singapore, including live updates of the queue situation at public polyclinics.</p>
 										<br/>
-										<p><span class="name-blackout name-clinicq">Node.js</span> <span class="name-blackout name-clinicq">React</span> <span class="name-blackout name-clinicq">Redux</span> <span class="name-blackout name-clinicq">Socket.io</span> <span class="name-blackout name-clinicq">d3.js</span> <span class="name-blackout name-clinicq">Scrapy</span> <span class="name-blackout name-clinicq">MongoDB</span> <span class="name-blackout name-clinicq">AWS</span><p>
+										<p><span class="name-blackout name-clinicq">Node.js</span> <span class="name-blackout name-clinicq">React</span> <span class="name-blackout name-clinicq">Redux</span> <span class="name-blackout name-clinicq">Socket.io</span> <span class="name-blackout name-clinicq">d3.js</span> <span class="name-blackout name-clinicq">Scrapy</span> <span class="name-blackout name-clinicq">MongoDB</span> <span class="name-blackout name-clinicq">AWS</span> <span class="name-blackout name-clinicq">HTML</span> <span class="name-blackout name-clinicq">CSS</span><p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</a>
 					</div>
+					<div class="grid-item swapbooks">
+						<a href="http://swapbooks.online" target="_blank">
+						<div class="grid-item-container">
+							<div class="row">
+								<div class="col-md-5 bootstrap-col">
+									<div class="grid-item-logo-swapbooks"></div>
+								</div>
+								<div class="col-md-7">
+									<div class="grid-item-description">
+										<h2>SwapBooks</h2>
+										<p>A one-stop information portal to view and post the queue situation at over 900 primary care facilities in Singapore, including live updates of the queue situation at public polyclinics.</p>
+										<br/>
+										<p><span class="name-blackout name-clinicq">Node.js</span> <span class="name-blackout name-clinicq">React</span> <span class="name-blackout name-clinicq">Redux</span> <span class="name-blackout name-clinicq">MongoDB</span> <span class="name-blackout name-clinicq">AWS</span> <span class="name-blackout name-clinicq">HTML</span> <span class="name-blackout name-clinicq">CSS</span><p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					</div>
+
 				</div>
 					<!-- <div class=" work-grid4">
 					<div class="work-bird">
