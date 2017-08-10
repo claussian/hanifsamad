@@ -250,6 +250,10 @@ a.down-in{
 .grid {
 	max-width: 1200px;
 }
+
+.grid h2 {
+	margin-bottom: 10px;
+}
 .grid-sizer,
 .grid-item {
 	width: 55%;
@@ -306,6 +310,7 @@ a.down-in{
 .clinicq a:hover, .clinicq a:active{
 	transition: color 0.5s ease;
 	color: #7456e9;
+	text-decoration: none;
 }
 
 .clinicq a:hover .grid-item-logo-clinicq {
@@ -344,6 +349,7 @@ a.down-in{
 .swapbooks a:hover, .swapbooks a:active{
 	transition: color 0.5s ease;
 	color: #7C2345;
+	text-decoration: none;
 }
 
 .swapbooks a:hover .grid-item-logo-swapbooks {
