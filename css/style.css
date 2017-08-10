@@ -1,12 +1,14 @@
-/*--A Design by W3layouts 
+/*--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+@font-face { font-family: 'Gidole'; src: url('../web/GidoleFont/Gidole-Regular.ttf'); }
+
 body{
 	background:#fff;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Gidole', sans-serif;
 }
 body a{
 	transition: 0.5s all;
@@ -33,7 +35,7 @@ h2,h3,h4,h5,h6,p{
 	float:right;
 	width: 14%;
 }
-.required input[type="submit"]{	
+.required input[type="submit"]{
 	background: none;
 	outline: none;
 	border: 1px solid #00bad2;
@@ -74,14 +76,14 @@ h2,h3,h4,h5,h6,p{
 	font-weight: 400;
 	padding: 1.7em 0 1.1em;
 	display:block;
-	
+
 }
 .top-nav ul li a:hover,.top-nav ul li.active a{
 	border-bottom: 7px solid #f44336;
 }
 .top-nav span.menu:before{
 	content: url(../images/menu.png)no-repeat 0px 0px;
-	cursor:pointer;	
+	cursor:pointer;
 	width:100%;
 }
 .top-nav span.menu{
@@ -170,15 +172,59 @@ a.arrow{
 	left: 54em;
 }
 /*--content--*/
+.profile-picture {
+	height:140px;
+	width: 140px;
+	background: url('../images/portrait.jpg');
+	background-size: cover;
+	border-radius: 50%;
+	margin: 0 auto;
+	box-shadow: 5px 5px 5px #f2f2f2;
+}
+.name-blackout {
+	color: #fff;
+	background-color: #000;
+	text-transform: uppercase;
+}
+.singapore-inline-img {
+	background: url('../images/sg-vector-red.png');
+	background-size: cover;
+	display: inline-block;
+	height:30px;
+	width:55px;
+	margin-left: 10px;
+	position: relative;
+	top: 5px;
+}
+.title-line {
+	background-color: #000;
+	height: 1px;
+}
+
 .about{
 	text-align:center;
-	background:#f2f2f2;
+	background: #fff;
+	/*background:url('../images/film-grain-invert.jpg');
+	background-size: contain;*/
 	padding:4em 0;
+}
+.about h1 {
+	color:#000;
+	font-weight: 300;
+	letter-spacing: 3px;
+}
+
+.about h2 {
+	color:#000;
+	font-weight: 300;
+	letter-spacing: 2px;
 }
 .about h3{
 	color:#000;
-	font-size:2.8em;
+	font-size:2em;
+	line-height:2em;
 	font-weight: 300;
+	letter-spacing: 2px;
 }
 .about p{
 	color:#000;
@@ -193,11 +239,83 @@ p.dummy-about{
 	font-size: 1.8em;
 	line-height: 1.5em;
 	font-weight: 200;
-	width: 80%;	
+	width: 80%;
+	padding: 0 0 20px 0;
 }
 a.down-in{
 	padding:1em 0;
 	display:block;
+}
+/*----Masonry----*/
+.grid-sizer,
+.grid-item {
+	width: 50%;
+}
+
+.grid-item p {
+	font-size: 1.1em;
+}
+
+.grid-item-container {
+	border: solid 1px #000;
+	border-radius: 10px;
+}
+
+.grid-item-container:hover {
+	transition: background 0.5s ease;
+	border: solid 1px #7456e9;
+}
+
+.bootstrap-clinicq {
+	height: 200px;
+	/*padding-right: 0;*/
+}
+
+.grid-item-logo-clinicq {
+	background: url('../images/ClinicQueue_Black.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+.grid-item-logo-clinicq:hover {
+	transition: background 0.5s ease;
+	background: url('../images/ClinicQueue_Color.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+.grid-item-description {
+	text-align: justify;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.clinicq a:hover, .clinicq a:active{
+	/*transition: color 0.5s ease;*/
+	color: #7456e9;
+}
+
+.text-clinicq:hover {
+	/*transition: color 0.5s ease;*/
+	color: #7456e9;
+}
+
+.name-clinicq:hover {
+	transition: color 0.5s ease;
+	background-color: #7456e9;
 }
 /*----*/
 .work-in {
@@ -344,7 +462,7 @@ ul.wmuSliderPagination {
 	width: 30px;
 	height: 5px;
 	margin: 5px 6px;
-	background:#171918 ;	
+	background:#171918 ;
 }
 .wmuSliderPagination a.wmuActive {
 	background:#f8d62e;
@@ -449,7 +567,7 @@ ul.social li{
 }
 ul.social li span{
 	display:block;
-	background:url(../images/img-sprite.png)0px 0px no-repeat;
+	background:url(../images/img-sprite.png)0px 0px;
 	width:24px;
 	height:24px;
 }
@@ -764,7 +882,7 @@ label.sit-on{
 	width: 50%;
 	margin: 0.4em 0em;
 }
-.post-comment input[type="submit"]{	
+.post-comment input[type="submit"]{
 	background: none;
 	outline: none;
 	border: 1px solid #00bad2;
@@ -825,7 +943,7 @@ a.read-next:hover{
 .footer p{
 	margin:0;
 	font-size: 1.3em;
-	color:#fff;	
+	color:#fff;
 	padding: 1.5em 0 0 0;
 }
 .footer-top{
@@ -849,16 +967,17 @@ ul.social-ic-icons li{
 	display:inline-block;
 	padding:0 1.5em;
 }
+
 ul.social-ic-icons li a span{
-	background: url(../images/img-sprite.png)no-repeat -59px -54px;
-	width: 35px;
+	/*background: url(../images/img-sprite.png)no-repeat -59px -54px;*/
+	/*width: 35px;
 	height: 30px;
 	display:block;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-o-transition: 0.5s all;
 	-moz-transition: 0.5s all;
-	-ms-transition: 0.5s all;
+	-ms-transition: 0.5s all;*/
 }
 ul.social-ic-icons {
 	padding: 0 0 1em;
@@ -870,7 +989,38 @@ b.yellow{
 	display: block;
 	margin: 0 auto;
 }
-ul.social-ic-icons li.twitter a span{
+
+ul.social-ic-icons li {
+
+}
+
+ul.social-ic-icons li.message{
+	background: url(../images/001-close-envelope.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 45px;
+	height: 40px;
+	margin: 0 50px 0 0;
+}
+ul.social-ic-icons li.linkedin{
+	background: url(../images/003-linkedin-logo.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 45px;
+	height: 40px;
+	margin: 0 50px 0 0;
+}
+ul.social-ic-icons li.github{
+	background: url(../images/002-github-logo.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 45px;
+	height: 40px;
+}
+/*ul.social-ic-icons li.twitter a span{
 	background-position: -102px -7px;
 }
 ul.social-ic-icons li.dribble a span{
@@ -893,7 +1043,7 @@ ul.social-ic-icons li.linked a span:hover{
 }
 ul.social-ic-icons li.behance a span:hover{
 	background-position:-218px -7px;
-}
+}*/
 /*--responsive media-quries--*/
 @media(max-width:1440px){
 a.arrow {
@@ -946,6 +1096,7 @@ a.arrow {
 }
 p.dummy-about {
 	width: 95%;
+	padding: 0 0 20px 0;
 }
 .work-grid {
 	margin: 0.4%;
@@ -1137,7 +1288,10 @@ a.arrow{
 	top: 7em;
 }
 .about h3 ,.work h3,.blog h3{
-	font-size: 2.5em;
+	line-height: 2em;
+	font-size: 2em;
+	color: #000;
+	font-weight: 300;
 }
 .agency {
 	top: 161px;
@@ -1153,6 +1307,7 @@ a.arrow{
 }
 p.dummy-about {
 	font-size: 1.5em;
+	padding: 0 0 20px 0;
 }
 .work-grid1 {
 	display: none;
@@ -1232,17 +1387,27 @@ a.arrow {
 	min-height: 291px;
 }
 .about h3,.work h3,.blog h3 ,.contact h3{
-	font-size: 2em;
+		line-height: 1.8em;
+		font-size: 1.8em;
+		color: #000;
+		font-weight: 300;
 }
+
 p.dummy-about {
 	font-size: 1.3em;
-	height: 95px;
+	/*height: 200px;*/
 	overflow: hidden;
+	padding: 0 0 20px 0;
 }
 .about p {
-	height: 73px;
+	/*height: 200px;*/
 	overflow: hidden;
 }
+
+.name-blackout {
+	display: block;
+}
+
 .about {
 	padding: 2em 0;
 }
@@ -1391,15 +1556,24 @@ a.arrow{
 }
 .about h3, .work h3, .blog h3, .contact h3 {
 	font-size: 1.5em;
+	line-height: 1.5em;
+	color: #000;
+	font-weight: 300;
 }
 p.dummy-about {
 font-size: 1.2em;
+padding: 0 0 20px 0;
 }
 .about p {
 	height: 54px;
 	padding: 0.5em 0;
 	line-height:1.4em;
 }
+
+.name-blackout {
+	display: block;
+}
+
 .about {
 	padding: 1.5em 0 0.5em;
 }
@@ -1578,4 +1752,9 @@ label.sit-in {
 	background: url("../images/a-right.png") no-repeat -3px 0px;
 	background-size: 34px;
 }
+}
+
+#about > div > div > ul > li.message > a {
+	height: 30px;
+	width: 30px;
 }
