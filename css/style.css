@@ -247,9 +247,18 @@ a.down-in{
 	display:block;
 }
 /*----Masonry----*/
+.grid {
+	max-width: 1200px;
+}
 .grid-sizer,
 .grid-item {
-	width: 50%;
+	width: 55%;
+	float: left;
+}
+
+.grid-item--width2 {
+	width: 45%;
+	float: left;
 }
 
 .grid-item p {
@@ -258,36 +267,13 @@ a.down-in{
 
 .grid-item-container {
 	border: solid 1px #000;
-	border-radius: 10px;
+	padding: 15px;
+	margin: 10px;
 }
 
-.grid-item-container:hover {
-	transition: background 0.5s ease;
-	border: solid 1px #7456e9;
-}
-
-.bootstrap-clinicq {
+.bootstrap-col {
 	height: 200px;
 	/*padding-right: 0;*/
-}
-
-.grid-item-logo-clinicq {
-	background: url('../images/ClinicQueue_Black.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 90%;
-	margin-top: 2.5%;
-}
-
-.grid-item-logo-clinicq:hover {
-	transition: background 0.5s ease;
-	background: url('../images/ClinicQueue_Color.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 90%;
-	margin-top: 2.5%;
 }
 
 .grid-item-description {
@@ -298,25 +284,83 @@ a.down-in{
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
-	padding-right: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+}
+
+/*--ClinicQueue styles--*/
+.grid-item-logo-clinicq {
+	background: url('../images/ClinicQueue_Black.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+/*--ClinicQueueSG hover effects--*/
+
+.clinicq .grid-item-container:hover {
+	transition: border 0.5s ease;
+	border: solid 1px #7456e9;
 }
 
 .clinicq a:hover, .clinicq a:active{
-	/*transition: color 0.5s ease;*/
-	color: #7456e9;
-}
-
-.text-clinicq:hover {
-	/*transition: color 0.5s ease;*/
-	color: #7456e9;
-}
-
-.name-clinicq:hover {
 	transition: color 0.5s ease;
+	color: #7456e9;
+}
+
+.clinicq a:hover .grid-item-logo-clinicq {
+	transition: background 0.5s ease;
+	background: url('../images/ClinicQueue_Color.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+.clinicq a:hover .name-clinicq {
+	transition: background-color 0.5s ease;
 	background-color: #7456e9;
 }
+
+/*--Swapbooks styles--*/
+
+.grid-item-logo-swapbooks {
+	background: url('../images/SwapBooks_Black.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+/*--Swapbooks hover effects--*/
+
+.swapbooks .grid-item-container:hover {
+	transition: border 0.5s ease;
+	border: solid 1px #7C2345;
+}
+
+.swapbooks a:hover, .swapbooks a:active{
+	transition: color 0.5s ease;
+	color: #7C2345;
+}
+
+.swapbooks a:hover .grid-item-logo-swapbooks {
+	transition: background 0.5s ease;
+	background: url('../images/SwapBooks_Color.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+.swapbooks a:hover .name-swapbooks {
+	transition: background-color 0.5s ease;
+	background-color: #7C2345;
+}
+
 /*----*/
 .work-in {
 	padding: 3em 0;
