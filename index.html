@@ -9,12 +9,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 <title>Hanif Samad Stat-Dev</title>
 <link rel="icon" href="./images/favicon_hs.png">
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!-- CDN for Masonry -->
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="./js/masonry.pkgd.min.js"></script>
+<link href="./css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<!-- CDN for Masonry -->
+<!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+<script src="./js/masonry.pkgd.min.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -23,20 +23,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--fonts-->
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
-<!--//fonts-->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 					jQuery(document).ready(function($) {
 						$(".scroll").click(function(event){
 							event.preventDefault();
 							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 						});
+						$('.grid').masonry({
+							  // set itemSelector so .grid-sizer is not used in layout
+							  itemSelector: '.grid-item',
+							  // use element for option
+							  columnWidth: '.grid-sizer',
+							  percentPosition: true
+							});
 					});
 					</script>
-					<!----start-top-nav-script---->
+<!----start-top-nav-script---->
 </head>
 <body>
 	<!--content-->
@@ -61,18 +63,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<a href="#work" class="scroll down-in"><img src="images/down.png" alt=""></a>
 				</div>
 			</div>
-			<!---->
+			<!--Work-->
 			<div class="container">
 			<div class="work" id="work">
-				<script>
-				$('.grid').masonry({
-					  // set itemSelector so .grid-sizer is not used in layout
-					  itemSelector: '.grid-item',
-					  // use element for option
-					  columnWidth: '.grid-sizer',
-					  percentPosition: true
-					});
-				</script>
 				<h3>WORK</h3>
 				<br/>
 				<div class="grid">
@@ -117,38 +110,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 					</a>
 					</div>
-					<div class="grid-item grid-item--width2 swapbooks">
-						<a href="http://swapbooks.online" target="_blank">
+					<div class="grid-item fellowship">
+						<a href="https://claussian.github.io/wdi-assign-1/" target="_blank">
 						<div class="grid-item-container">
 							<div class="row">
 								<div class="col-md-5 bootstrap-col">
-									<div class="grid-item-logo-swapbooks"></div>
+									<div class="grid-item-logo-fellowship"></div>
 								</div>
 								<div class="col-md-7">
 									<div class="grid-item-description">
-										<h2>SwapBooks</h2>
-										<p>A book sharing collective hosted on a web application. Ability to reserve and release books, responsive search by book title, and a user dashboard for managing reserved and shared books.</p>
+										<h2>Save the Fellowship</h2>
+										<p>Classic snake game, re-imagined with Lord of the Rings characters. Building this game is a great lesson on Javascript copy by reference vs. copy by value!</p>
 										<br/>
-										<p><span class="name-blackout name-swapbooks">Node.js</span> <span class="name-blackout name-swapbooks">React</span> <span class="name-blackout name-swapbooks">Redux</span> <span class="name-blackout name-swapbooks">MongoDB</span> <span class="name-blackout name-swapbooks">AWS</span> <span class="name-blackout name-swapbooks">HTML</span> <span class="name-blackout name-swapbooks">CSS</span><p>
+										<p><span class="name-blackout name-fellowship">HTML</span> <span class="name-blackout name-fellowship">CSS</span> <span class="name-blackout name-fellowship">Javascript</span><p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</a>
 					</div>
-					<div class="grid-item clinicq">
-						<a href="https://52.76.125.37" target="_blank">
+					<div class="grid-item grid-item--width2 sgnews">
+						<a href="https://singaporenews.github.io" target="_blank">
 						<div class="grid-item-container">
 							<div class="row">
 								<div class="col-md-5 bootstrap-col">
-									<div class="grid-item-logo-clinicq"></div>
+									<div class="grid-item-logo-sgnews"></div>
 								</div>
 								<div class="col-md-7">
 									<div class="grid-item-description">
-										<h2>ClinicQueueSG</h2>
-										<p>A one-stop information portal to view and post the queue situation at over 900 primary care facilities in Singapore, including live updates of the queue situation at public polyclinics.</p>
+										<h2>The Singapore News Story</h2>
+										<p> A data visualisation of the key words used in the Straits Times newspaper across 150 years of its history. Winning entry in IDA's Data in the City dataviz competition in 2014.</p>
 										<br/>
-										<p><span class="name-blackout name-clinicq">Node.js</span> <span class="name-blackout name-clinicq">React</span> <span class="name-blackout name-clinicq">Redux</span> <span class="name-blackout name-clinicq">Socket.io</span> <span class="name-blackout name-clinicq">d3.js</span> <span class="name-blackout name-clinicq">Scrapy</span> <span class="name-blackout name-clinicq">MongoDB</span> <span class="name-blackout name-clinicq">AWS</span> <span class="name-blackout name-clinicq">HTML</span> <span class="name-blackout name-clinicq">CSS</span><p>
+										<p><span class="name-blackout name-sgnews">d3.js</span> <span class="name-blackout name-sgnews">HTML</span> <span class="name-blackout name-sgnews">CSS</span> <span class="name-blackout name-sgnews">Javascript</span> <span class="name-blackout name-sgnews">R</span><p>
 									</div>
 								</div>
 							</div>
@@ -157,92 +150,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 
 				</div>
-					<!-- <div class=" work-grid4">
-					<div class="work-bird">
-							<a class="popup-with-zoom-anim" href="#small-dialog"><img class="img-responsive " src="images/pic4.jpg" alt="" >
-							<div class="simple simple-out">
-						    	<h5>CRU<span>SCHIF</span>ORM</h5>
-						    	<p>Lorem Ipsum passages, and more recently with desktop.	</p>
-						    </div></a>
-						</div>
-						<div class="work-bird">
-							<a class="popup-with-zoom-anim" href="#small-dialog"><img class="img-responsive work-on" src="images/pic6.jpg" alt="" >
-							<div class="simple simple-out">
-						    	<h5>CRU<span>SCHIF</span>ORM</h5>
-						    	<p>Lorem Ipsum passages, and more recently with desktop.	</p>
-						    </div></a>
-						</div>
-					</div>
-
-					<div class="work-grid work-grid5">
-						<a class="popup-with-zoom-anim" href="#small-dialog"><img class="img-responsive" src="images/pic5.jpg" alt="" >
-						<div class="simple sim-1">
-						    	<h5>CRU<span>SCHIF</span>ORM</h5>
-						    	<p>Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-						    </div>
-					</div>
-					<div class="clearfix"> </div> -->
+					<div class="clearfix"> </div>
 				<!-- </div> -->
-				<a href="#item" class="scroll blog-down"><img src="images/down.png" alt=""></a>
+				<a href="#quote" class="scroll down-in"><img src="images/down.png" alt=""></a>
 			</div>
 		</div>
 		<!---->
 
 			<!---->
-			<div class="contact" id="contact">
+			<div class="quote" id="quote">
 				<div class="container">
-				<h3>CONTACT</h3>
-				<P>Start your project today <span>or</span> Maybe you're here just to say '<span>Hi</span>'?</p>
-				<form>
-					<div class="contact-grid">
-						<div class="col-md-6 contact-us">
-							<input type="text" value="Name*" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Name*';}">
-						</div>
-						<div class="col-md-6 contact-us">
-							<input type="text" value="Email*" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Email*';}">
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Message*';}">Message*</textarea>
-					<div class="send ">
-						<input type="submit" value="SEND NOW" >
-					</div>
-				</form>
-
+					<blockquote class="w3-panel w3-leftbar w3-light-grey">
+					<div class="quote-open"></div>
+					<h4 class="quote-statement">Citizens cannot relate well to the complex world around them by factual knowledge and logic alone...<span>Narrative imagination</span>...(is) the ability to think what it might be like to be in the shoes of a person different from oneself."</h4>
+					<h4 class="quote-attribution">Martha C. Nussbaum, <span>Not for Profit</span></h4>
+					<br>
+					</blockquote>
 				</div>
 			</div>
 	</div>
 	<!--footer-->
 	<div class="footer">
 		<div class="container">
-					<a href="#home" class="scroll footer-top"> <img src="images/drop.png" alt=""/></a>
-
-					 <ul class="social-ic-icons">
-						<li class="message"><a href="#"><span> </span></a></li>
-						<li class="twitter"><a href="#"><span> </span></a></li>
-						<li class="dribble"><a href="#"><span> </span></a></li>
-						<li class="linked"><a href="#"><span> </span></a></li>
-						<li class="behance"><a href="#"><span> </span></a></li>
-					</ul>
-					<b class="yellow"> </b>
-			<p class="footer-grid">&copy; 2014 Template by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+			<p class="footer-grid">&copy; 2017 Hanif Samad. Made with <a href="https://masonry.desandro.com/" target="_blank">Masonry</a> and inspired by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 
 		 </div>
-		 <script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear'
-					 		};
-							*/
-
-							$().UItoTop({ easingType: 'easeOutQuart' });
-
-						});
-					</script>
 	 </div>
 
 </body>
