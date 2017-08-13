@@ -472,6 +472,11 @@ a.down-in{
 	background-color: #3D85C6;
 }
 
+/*--Down scroll for work containers--*/
+.down-work {
+	display:none;
+}
+
 #quote .container {
 }
 
@@ -1666,6 +1671,9 @@ p.dummy-about {
 }
 .work {
 	padding: 2em 0;
+}
+.down-work {
+	display:block;
 }
 .motor-in {
 	height: 173px;
