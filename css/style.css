@@ -209,7 +209,7 @@ span.name-blackout {
 	background: #fff;
 	/*background:url('../images/film-grain-invert.jpg');
 	background-size: contain;*/
-	padding:4em 0;
+	padding:4em 0 0 0;
 }
 .about h1 {
 	color:#000;
@@ -523,7 +523,7 @@ a.down-in{
 }
 .work{
 	text-align:center;
-	padding:4em 0;
+	padding:3em 0;
 }
 .work h3{
 	color:#000;
@@ -1482,14 +1482,11 @@ a.arrow {
 	top: 209px;
 }
 .about {
-	padding-top: 3em;
-	padding-bottom: 0;
-	padding-left: 0;
-	padding-right: 0;
+	padding: 3em 0 0 0;
 
 }
 .work {
-	padding: 3em 0;
+	padding: 2.5em 0;
 }
 .design {
 	min-height: 373px;
@@ -1667,7 +1664,7 @@ p.dummy-about {
 }
 
 .about {
-	padding: 2em 0;
+	padding: 2em 0 0 0;
 }
 .work {
 	padding: 2em 0;
@@ -1852,7 +1849,7 @@ padding: 0 0 20px 0;
 }
 
 .about {
-	padding: 1.5em 0 0.5em;
+	padding: 1.5em 0 0 0;
 }
 .work {
 	padding: 1.5em 0;
