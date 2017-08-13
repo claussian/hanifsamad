@@ -17,6 +17,7 @@ body a{
 	-moz-transition: 0.5s all;
 	-ms-transition: 0.5s all;
 }
+
 h2,h3,h4,h5,h6,p{
 	margin:0;
 }
@@ -31,7 +32,7 @@ h2,h3,h4,h5,h6,p{
 	float: left;
 	width: 81%;
 }
-.required{
+/*.required{
 	float:right;
 	width: 14%;
 }
@@ -60,8 +61,8 @@ h2,h3,h4,h5,h6,p{
 .logo{
 	float: left;
 	margin-top: 0.8em;
-}
-.top-nav{
+}*/
+/*.top-nav{
 	float:right;
 }
 .top-nav ul li{
@@ -101,19 +102,19 @@ h2,h3,h4,h5,h6,p{
 	background:#f44336;
 	top:4.3em;
 }
-.top-nav span.menu{
+/*.top-nav span.menu{
 	display: block;
 	width:100%;
 	position:relative;
 	text-align: right;
 	padding: 1.4em 0 1.1em;
-}
-.top-nav ul li{
+}*/
+/*.top-nav ul li{
 	display: block;
 	float:none;
 	padding: 1em 0.8em;
 	text-align: center;
-}
+}*/
 /*.top-nav ul li a,.top-nav ul li.active a{
 	color:#fff;
 	border: none;
@@ -128,7 +129,7 @@ h2,h3,h4,h5,h6,p{
 }*/
 }
 /*----*/
-.banner{
+/*.banner{
 	background:url(../images/banner.jpg) 0px 0px no-repeat;
 	width:100%;
 	min-height:600px;
@@ -170,9 +171,9 @@ a.arrow{
 	position: absolute;
 	bottom: 49px;
 	left: 54em;
-}
+}*/
 /*--content--*/
-.profile-picture {
+/*.profile-picture {
 	height:140px;
 	width: 140px;
 	background: url('../images/portrait.jpg');
@@ -180,8 +181,9 @@ a.arrow{
 	border-radius: 50%;
 	margin: 0 auto;
 	box-shadow: 5px 5px 5px #f2f2f2;
-}
-.name-blackout {
+}*/
+
+span.name-blackout {
 	color: #fff;
 	background-color: #000;
 	text-transform: uppercase;
@@ -196,6 +198,7 @@ a.arrow{
 	position: relative;
 	top: 5px;
 }
+
 .title-line {
 	background-color: #000;
 	height: 1px;
@@ -257,13 +260,13 @@ a.down-in{
 }
 .grid-sizer,
 .grid-item {
-	width: 55%;
+	width: 50%;
 	float: left;
 }
 
 .grid-item--width2 {
-	width: 45%;
-	float: left;
+	/*width: 45%;
+	float: left;*/
 }
 
 .grid-item p {
@@ -281,7 +284,7 @@ a.down-in{
 	/*padding-right: 0;*/
 }
 
-.grid-item-description {
+.grid-item-description p {
 	text-align: justify;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -289,6 +292,10 @@ a.down-in{
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
+}
+
+.grid-item-description h2 {
+	text-align: left;
 }
 
 .mobile-friendly-inline {
@@ -390,6 +397,117 @@ a.down-in{
 	position: relative;
 	top: 5px;
 }
+
+/*--Save the Fellowship styles--*/
+.grid-item-logo-fellowship {
+	background: url('../images/frodo_Black.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+/*--Save the Fellowship hover effects--*/
+
+.fellowship .grid-item-container:hover {
+	transition: border 0.5s ease;
+	border: solid 1px #17510E;
+}
+
+.fellowship a:hover, .fellowship a:active{
+	transition: color 0.5s ease;
+	color: #17510E;
+	text-decoration: none;
+}
+
+.fellowship a:hover .grid-item-logo-fellowship {
+	transition: background 0.5s ease;
+	background: url('../images/frodo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+.fellowship a:hover .name-fellowship {
+	transition: background-color 0.5s ease;
+	background-color: #17510E;
+}
+
+/*--Singapore News styles--*/
+.grid-item-logo-sgnews {
+	background: url('../images/sgnews_Black.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+/*--Singapore News hover effects--*/
+
+.sgnews .grid-item-container:hover {
+	transition: border 0.5s ease;
+	border: solid 1px #3D85C6;
+}
+
+.sgnews a:hover, .sgnews a:active{
+	transition: color 0.5s ease;
+	color: #3D85C6;
+	text-decoration: none;
+}
+
+.sgnews a:hover .grid-item-logo-sgnews {
+	transition: background 0.5s ease;
+	background: url('../images/sgnews_Color.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+.sgnews a:hover .name-sgnews {
+	transition: background-color 0.5s ease;
+	background-color: #3D85C6;
+}
+
+#quote .container {
+}
+
+#quote .quote-open {
+	height: 50px;
+	background: url('../images/open-quote.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position:left;
+	/*font-size: 3em;*/
+}
+
+#quote .quote-statement {
+	line-height: 1.5em;
+	text-align: justify;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+#quote .quote-statement span {
+	font-size: 1.2em;
+}
+
+#quote .quote-attribution {
+	line-height: 1.5em;
+	text-align: right;
+}
+
+#quote .quote-attribution span {
+	font-style: italic;
+}
+
 
 /*----*/
 .work-in {
@@ -1016,7 +1134,7 @@ a.read-next:hover{
 }
 .footer p{
 	margin:0;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	color:#fff;
 	padding: 1.5em 0 0 0;
 }
@@ -1077,6 +1195,18 @@ ul.social-ic-icons li.message{
 	height: 40px;
 	margin: 0 50px 0 0;
 }
+
+/*ul.social-ic-icons li.message:hover {
+	transition: background 0.5s ease;
+	background: url(../images/001-close-envelope-red.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 45px;
+	height: 40px;
+	margin: 0 50px 0 0;
+}*/
+
 ul.social-ic-icons li.linkedin{
 	background: url(../images/003-linkedin-logo.png);
 	background-position: center;
@@ -1086,6 +1216,18 @@ ul.social-ic-icons li.linkedin{
 	height: 40px;
 	margin: 0 50px 0 0;
 }
+
+/*ul.social-ic-icons li.linkedin:hover{
+	transition: background 0.5s ease;
+	background: url(../images/003-linkedin-logo-red.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 45px;
+	height: 40px;
+	margin: 0 50px 0 0;
+}*/
+
 ul.social-ic-icons li.github{
 	background: url(../images/002-github-logo.png);
 	background-position: center;
@@ -1094,6 +1236,18 @@ ul.social-ic-icons li.github{
 	width: 45px;
 	height: 40px;
 }
+
+/*ul.social-ic-icons li.github:hover{
+	transition: background 0.5s ease;
+	background: url(../images/002-github-logo-red.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 45px;
+	height: 40px;
+	margin: 0 50px 0 0;
+}*/
+
 /*ul.social-ic-icons li.twitter a span{
 	background-position: -102px -7px;
 }
