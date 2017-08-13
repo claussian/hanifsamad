@@ -1672,6 +1672,7 @@ p.dummy-about {
 .work {
 	padding: 2em 0;
 }
+
 .down-work {
 	display:block;
 }
@@ -2028,6 +2029,14 @@ label.sit-in {
 	background: url("../images/a-right.png") no-repeat -3px 0px;
 	background-size: 34px;
 }
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 #about > div > div > ul > li.message > a {
