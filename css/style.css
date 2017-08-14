@@ -472,6 +472,44 @@ a.down-in{
 	background-color: #3D85C6;
 }
 
+/*--Household Typology styles--*/
+.grid-item-logo-hhtypology {
+	background: url('../images/Bank_of_England.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+/*--Household Typology hover effects--*/
+
+.hhtypology .grid-item-container:hover {
+	transition: border 0.5s ease;
+	border: solid 1px #67000D;
+}
+
+.hhtypology a:hover, .hhtypology a:active{
+	transition: color 0.5s ease;
+	color: #67000D;
+	text-decoration: none;
+}
+
+.hhtypology a:hover .grid-item-logo-hhtypology {
+	transition: background 0.5s ease;
+	background: url('../images/Bank_of_England_red.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+.hhtypology a:hover .name-hhtypology {
+	transition: background-color 0.5s ease;
+	background-color: #67000D;
+}
+
 /*--Down scroll for work containers--*/
 .down-work {
 	display:none;
