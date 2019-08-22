@@ -309,6 +309,49 @@ a.down-in{
 	top: 5px;
 }
 
+/*--LinkedInDS styles--*/
+.grid-item-logo-linkedinds {
+	background: url('../images/ouroboros-square-invert.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+.link-highlight {
+	font-size: 115%;
+}
+
+/*--LinkedInDS hover effects--*/
+
+.linkedinds .grid-item-container:hover {
+	transition: border 0.5s ease;
+	border: solid 1px #9b5b3d;
+}
+
+.linkedinds a:hover, .linkedinds a:active{
+	transition: color 0.5s ease;
+	color: #9b5b3d;
+	text-decoration: none;
+}
+
+.linkedinds a:hover .grid-item-logo-linkedinds {
+	transition: background 0.5s ease;
+	background: url('../images/ouroboros-square.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+.linkedinds a:hover .name-linkedinds {
+	transition: background-color 0.5s ease;
+	background-color: #9b5b3d;
+}
+
+
 /*--ClinicQueue styles--*/
 .grid-item-logo-clinicq {
 	background: url('../images/ClinicQueue_Black.png');
