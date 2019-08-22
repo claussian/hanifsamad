@@ -1279,7 +1279,7 @@ ul.social-ic-icons li.message{
 	background-repeat: no-repeat;
 	width: 45px;
 	height: 40px;
-	margin: 0 50px 0 0;
+	/* margin: 0 50px 0 0; */
 }
 
 /*ul.social-ic-icons li.message:hover {
@@ -1314,6 +1314,16 @@ ul.social-ic-icons li.linkedin{
 	margin: 0 50px 0 0;
 }*/
 
+ul.social-ic-icons li.medium{
+	background: url(../images/medium_108052.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 45px;
+	height: 40px;
+	margin: 0 50px 0 0;
+}
+
 ul.social-ic-icons li.github{
 	background: url(../images/002-github-logo.png);
 	background-position: center;
@@ -1321,6 +1331,7 @@ ul.social-ic-icons li.github{
 	background-repeat: no-repeat;
 	width: 45px;
 	height: 40px;
+	margin: 0 50px 0 0;
 }
 
 /*ul.social-ic-icons li.github:hover{
