@@ -515,6 +515,45 @@ a.down-in{
 	background-color: #3D85C6;
 }
 
+/*--SG2020Elections styles--*/
+.grid-item-logo-sg2020election {
+	background: url('../images/sg2020-1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+/*--SG2020Elections hover effects--*/
+
+.sg2020election .grid-item-container:hover {
+	transition: border 0.5s ease;
+	border: solid 1px #008080;
+}
+
+.sg2020election a:hover, .sg2020election a:active{
+	transition: color 0.5s ease;
+	color: #008080;
+	text-decoration: none;
+}
+
+.sg2020election a:hover .grid-item-logo-sg2020election {
+	transition: background 0.5s ease;
+	background: url('../images/sg2020-2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+.sg2020election a:hover .name-sg2020election {
+	transition: background-color 0.5s ease;
+	background-color: #008080;
+}
+
+
 /*--Household Typology styles--*/
 .grid-item-logo-hhtypology {
 	background: url('../images/Bank_of_England.png');
