@@ -515,6 +515,43 @@ a.down-in{
 	background-color: #3D85C6;
 }
 
+/*--SG Philo styles--*/
+.grid-item-logo-sgphilo {
+	background: url('../images/sgphilo-1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+/*--SG Philo hover effects--*/
+
+.sgphilo .grid-item-container:hover {
+	transition: border 0.5s ease;
+	border: solid 1px #03396c;
+}
+
+.sgphilo a:hover, .sgphilo a:active{
+	transition: color 0.5s ease;
+	color: #03396c;
+	text-decoration: none;
+}
+
+.sgphilo a:hover .grid-item-logo-sgphilo {
+	transition: background 0.5s ease;
+	background: url('../images/sgphilo-2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	margin-top: 2.5%;
+}
+
+.sgphilo a:hover .name-sgphilo {
+	transition: background-color 0.5s ease;
+	background-color: #03396c;
+}
+
 /*--SG2020Elections styles--*/
 .grid-item-logo-sg2020election {
 	background: url('../images/sg2020-1.png');
